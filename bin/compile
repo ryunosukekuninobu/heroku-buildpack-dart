@@ -96,7 +96,7 @@ for filename in `find . -name pubspec.yaml | grep -v dart-sdk | grep -v pub-cach
     message "*** Running pub get"
 
     #start pub from the /app folder to have correct symlink paths
-    /app/dart-sdk/bin/dart pub get
+    /app/dart-sdk/bin/flutter pub get
 
     for package in $DART_GLOBAL_PACKAGES
     do
